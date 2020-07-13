@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../tests"
+		}
+	],
+	"settings": {
+		"debug.internalConsoleOptions": "neverOpen"
+	}
+}

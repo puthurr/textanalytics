@@ -1,0 +1,205 @@
+{
+  "values": [
+    {
+      "recordId": "e1",
+      "data": {
+        "entities": [
+          {
+            "text": "Contoso Steakhouse",
+            "type": "Location",
+            "subtype": null,
+            "offset": 11,
+            "length": 18,
+            "score": 0.46
+          },
+          {
+            "text": "midtown NYC",
+            "type": "Location",
+            "subtype": null,
+            "offset": 41,
+            "length": 11,
+            "score": 0.55
+          },
+          {
+            "text": "last week",
+            "type": "DateTime",
+            "subtype": "DateRange",
+            "offset": 53,
+            "length": 9,
+            "score": 0.8
+          },
+          {
+            "text": "chief cook",
+            "type": "PersonType",
+            "subtype": null,
+            "offset": 166,
+            "length": 10,
+            "score": 0.82
+          },
+          {
+            "text": "owner",
+            "type": "PersonType",
+            "subtype": null,
+            "offset": 195,
+            "length": 5,
+            "score": 0.71
+          },
+          {
+            "text": "John Doe",
+            "type": "Person",
+            "subtype": null,
+            "offset": 222,
+            "length": 8,
+            "score": 0.94
+          },
+          {
+            "text": "kitchen",
+            "type": "Location",
+            "subtype": "Structural",
+            "offset": 272,
+            "length": 7,
+            "score": 0.6
+          },
+          {
+            "text": "www.contososteakhouse.com",
+            "type": "URL",
+            "subtype": null,
+            "offset": 477,
+            "length": 25,
+            "score": 0.8
+          },
+          {
+            "text": "312-555-0176",
+            "type": "Phone Number",
+            "subtype": null,
+            "offset": 509,
+            "length": 12,
+            "score": 0.8
+          },
+          {
+            "text": "email",
+            "type": "Skill",
+            "subtype": null,
+            "offset": 530,
+            "length": 5,
+            "score": 0.8
+          },
+          {
+            "text": "order@contososteakhouse.com",
+            "type": "Email",
+            "subtype": null,
+            "offset": 539,
+            "length": 27,
+            "score": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "e2",
+      "data": {
+        "linked_entities": [
+          {
+            "name": "Sirloin steak",
+            "matches": [
+              {
+                "text": "Sirloin steak",
+                "offset": 346,
+                "length": 13,
+                "score": 0.69
+              }
+            ],
+            "language": "en",
+            "id": "Sirloin steak",
+            "url": "https://en.wikipedia.org/wiki/Sirloin_steak",
+            "datasource": "Wikipedia"
+          },
+          {
+            "name": "Steakhouse",
+            "matches": [
+              {
+                "text": "Steakhouse",
+                "offset": 19,
+                "length": 10,
+                "score": 0.78
+              }
+            ],
+            "language": "en",
+            "id": "Steakhouse",
+            "url": "https://en.wikipedia.org/wiki/Steakhouse",
+            "datasource": "Wikipedia"
+          },
+          {
+            "name": "John Doe",
+            "matches": [
+              {
+                "text": "John Doe",
+                "offset": 222,
+                "length": 8,
+                "score": 0.01
+              }
+            ],
+            "language": "en",
+            "id": "John Doe",
+            "url": "https://en.wikipedia.org/wiki/John_Doe",
+            "datasource": "Wikipedia"
+          },
+          {
+            "name": "New York City",
+            "matches": [
+              {
+                "text": "NYC",
+                "offset": 49,
+                "length": 3,
+                "score": 0.39
+              }
+            ],
+            "language": "en",
+            "id": "New York City",
+            "url": "https://en.wikipedia.org/wiki/New_York_City",
+            "datasource": "Wikipedia"
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "epii3",
+      "data": {
+        "pii_entities": [
+          {
+            "text": "John Doe",
+            "type": "Person",
+            "subtype": null,
+            "offset": 222,
+            "length": "8",
+            "score": 0.94
+          },
+          {
+            "text": "www.contososteakhouse.com",
+            "type": "URL",
+            "subtype": null,
+            "offset": 477,
+            "length": "25",
+            "score": 0.8
+          },
+          {
+            "text": "312-555-0176",
+            "type": "Phone Number",
+            "subtype": null,
+            "offset": 509,
+            "length": "12",
+            "score": 0.8
+          },
+          {
+            "text": "order@contososteakhouse.com",
+            "type": "Email",
+            "subtype": null,
+            "offset": 539,
+            "length": "27",
+            "score": 0.8
+          }
+        ]
+      }
+    }
+  ]
+}

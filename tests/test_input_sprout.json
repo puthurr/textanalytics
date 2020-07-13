@@ -1,0 +1,364 @@
+{
+    "documents": [
+        {
+            "id": "1",
+            "entities": [
+                {
+                    "name": "Habits\nCoach Shelby",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8493950366973877,
+                            "text": "Habits\nCoach Shelby",
+                            "offset": 9,
+                            "length": 19
+                        }
+                    ],
+                    "type": "Organization"
+                },
+                {
+                    "name": "January 2, 2019",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "January 2, 2019",
+                            "offset": 29,
+                            "length": 15
+                        }
+                    ],
+                    "type": "DateTime",
+                    "subType": "Date"
+                },
+                {
+                    "name": "one",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "one",
+                            "offset": 159,
+                            "length": 3
+                        }
+                    ],
+                    "type": "Quantity",
+                    "subType": "Number"
+                },
+                {
+                    "name": "Cue/Trigger\nRoutine/Action\nReward",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.9694994688034058,
+                            "text": "Cue/Trigger\nRoutine/Action\nReward",
+                            "offset": 209,
+                            "length": 33
+                        }
+                    ],
+                    "type": "Organization"
+                },
+                {
+                    "name": "Cue (theatrical)",
+                    "matches": [
+                        {
+                            "wikipediaScore": 0.5486670261677127,
+                            "entityTypeScore": 0.8,
+                            "text": "Cue",
+                            "offset": 209,
+                            "length": 3
+                        }
+                    ],
+                    "wikipediaLanguage": "en",
+                    "wikipediaId": "Cue (theatrical)",
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cue_(theatrical)",
+                    "bingId": "f363ee1c-bb09-6656-5ae1-44cff1cca0ec",
+                    "type": "Other"
+                },
+                {
+                    "name": "http://www.hustlehealthy.com/habit-loop-to-control-life/",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "http://www.hustlehealthy.com/habit-loop-to-control-life/",
+                            "offset": 245,
+                            "length": 56
+                        },
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "http://www.hustlehealthy.com/habit-loop-to-control-life/",
+                            "offset": 1169,
+                            "length": 56
+                        }
+                    ],
+                    "type": "URL"
+                },
+                {
+                    "name": "Stress\nBoredom",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.9470157623291016,
+                            "text": "Stress\nBoredom",
+                            "offset": 353,
+                            "length": 14
+                        }
+                    ],
+                    "type": "Organization"
+                },
+                {
+                    "name": "Plans (album)",
+                    "matches": [
+                        {
+                            "wikipediaScore": 0.2426221955199468,
+                            "entityTypeScore": 0.8,
+                            "text": "Plan",
+                            "offset": 763,
+                            "length": 4
+                        }
+                    ],
+                    "wikipediaLanguage": "en",
+                    "wikipediaId": "Plans (album)",
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Plans_(album)",
+                    "bingId": "57d4da85-c1ea-a0a4-b89d-831ee165d7dc",
+                    "type": "Other"
+                },
+                {
+                    "name": "Compassion fatigue",
+                    "matches": [
+                        {
+                            "wikipediaScore": 0.5812624246003981,
+                            "entityTypeScore": 0.8,
+                            "text": "Compassion",
+                            "offset": 860,
+                            "length": 10
+                        }
+                    ],
+                    "wikipediaLanguage": "en",
+                    "wikipediaId": "Compassion fatigue",
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Compassion_fatigue",
+                    "bingId": "40290488-437d-9214-11f0-b31f92e3a6bb",
+                    "type": "Other"
+                },
+                {
+                    "name": "https://www.bakadesuyo.com/2018/09/how-to-quit-bad-habits/",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "https://www.bakadesuyo.com/2018/09/how-to-quit-bad-habits/",
+                            "offset": 941,
+                            "length": 58
+                        }
+                    ],
+                    "type": "URL"
+                },
+                {
+                    "name": "2018/09",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "2018/09",
+                            "offset": 968,
+                            "length": 7
+                        }
+                    ],
+                    "type": "DateTime",
+                    "subType": "DateRange"
+                },
+                {
+                    "name": "February 6, 2019",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "February 6, 2019",
+                            "offset": 1246,
+                            "length": 16
+                        }
+                    ],
+                    "type": "DateTime",
+                    "subType": "Date"
+                },
+                {
+                    "name": "March 6, 2019",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "March 6, 2019",
+                            "offset": 1276,
+                            "length": 13
+                        }
+                    ],
+                    "type": "DateTime",
+                    "subType": "Date"
+                },
+                {
+                    "name": "Song",
+                    "matches": [
+                        {
+                            "wikipediaScore": 0.4908006909033511,
+                            "entityTypeScore": 0.8,
+                            "text": "Topics",
+                            "offset": 1295,
+                            "length": 6
+                        }
+                    ],
+                    "wikipediaLanguage": "en",
+                    "wikipediaId": "Song",
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Song",
+                    "bingId": "d4e0515a-f8e7-40a8-a0fb-55d86c82adf8",
+                    "type": "Other"
+                },
+                {
+                    "name": "February",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "February",
+                            "offset": 1498,
+                            "length": 8
+                        }
+                    ],
+                    "type": "DateTime",
+                    "subType": "DateRange"
+                },
+                {
+                    "name": "the month",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "the month",
+                            "offset": 1510,
+                            "length": 9
+                        }
+                    ],
+                    "type": "DateTime",
+                    "subType": "DateRange"
+                },
+                {
+                    "name": "www.healthcheck360.com/blog",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "www.healthcheck360.com/blog",
+                            "offset": 1666,
+                            "length": 27
+                        },
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "www.healthcheck360.com/blog",
+                            "offset": 1817,
+                            "length": 27
+                        },
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "www.healthcheck360.com/blog",
+                            "offset": 1935,
+                            "length": 27
+                        }
+                    ],
+                    "type": "URL"
+                },
+                {
+                    "name": "www.healthcheck360blog.com",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "www.healthcheck360blog.com",
+                            "offset": 1715,
+                            "length": 26
+                        }
+                    ],
+                    "type": "URL"
+                },
+                {
+                    "name": "Social network",
+                    "matches": [
+                        {
+                            "wikipediaScore": 0.5427517181543857,
+                            "entityTypeScore": 0.8,
+                            "text": "Contact us",
+                            "offset": 1743,
+                            "length": 10
+                        }
+                    ],
+                    "wikipediaLanguage": "en",
+                    "wikipediaId": "Social network",
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Social_network",
+                    "bingId": "cdb9bd06-ae8b-f968-914f-2a1ae34220ea",
+                    "type": "Other"
+                },
+                {
+                    "name": "www.twitter.com/healthcheck360",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "www.twitter.com/healthcheck360",
+                            "offset": 1754,
+                            "length": 30
+                        }
+                    ],
+                    "type": "URL"
+                },
+                {
+                    "name": "www.facebook.com/healthcheck360",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "www.facebook.com/healthcheck360",
+                            "offset": 1785,
+                            "length": 31
+                        }
+                    ],
+                    "type": "URL"
+                },
+                {
+                    "name": "www.instagram.com/healthcheck360/",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "www.instagram.com/healthcheck360/",
+                            "offset": 1845,
+                            "length": 33
+                        }
+                    ],
+                    "type": "URL"
+                },
+                {
+                    "name": "Coaching",
+                    "matches": [
+                        {
+                            "wikipediaScore": 0.3588917706352066,
+                            "entityTypeScore": 0.8,
+                            "text": "COACH",
+                            "offset": 1981,
+                            "length": 5
+                        }
+                    ],
+                    "wikipediaLanguage": "en",
+                    "wikipediaId": "Coaching",
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Coaching",
+                    "bingId": "9a1074da-17d5-feb3-4cb2-3081a123180d",
+                    "type": "Other"
+                },
+                {
+                    "name": "1-866-511-0360",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "1-866-511-0360",
+                            "offset": 1987,
+                            "length": 14
+                        }
+                    ],
+                    "type": "Phone_Number"
+                },
+                {
+                    "name": "healthcoach@healthcheck360.com",
+                    "matches": [
+                        {
+                            "entityTypeScore": 0.8,
+                            "text": "healthcoach@healthcheck360.com",
+                            "offset": 2005,
+                            "length": 30
+                        }
+                    ],
+                    "type": "Email"
+                }
+            ]
+        }
+    ]
+}
