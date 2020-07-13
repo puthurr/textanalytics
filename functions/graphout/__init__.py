@@ -123,6 +123,8 @@ def transform_value(value):
                     edge['targetlabel']= entity['type']
                     edge['offset']=entity['offset']
                     edge['score']=entity['score']
+                    # TODO - Add last modified time + creation time of the document
+
                     edges.append(edge)
                     pass
                 pass
@@ -164,7 +166,9 @@ def transform_value(value):
                     edge['score']=entity['matches'][0]['score']
                     for match in entity['matches']:
                         # Avg the offset and score ? 
+                        # Avg distance between matches - distribution
                         pass
+                    # TODO - Add last modified time + creation time of the document
                     edges.append(edge)
                     pass
                 pass
