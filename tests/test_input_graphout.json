@@ -1,7 +1,7 @@
 {
   "values": [
     {
-      "recordId": "e1",
+      "recordId": "doc1",
       "data": {
         "entities": [
           {
@@ -96,9 +96,9 @@
       }
     },
     {
-      "recordId": "e2",
+      "recordId": "doc2",
       "data": {
-        "linked_entities": [
+        "entities": [
           {
             "name": "Sirloin steak",
             "matches": [
@@ -163,9 +163,9 @@
       }
     },
     {
-      "recordId": "epii3",
+      "recordId": "doc3",
       "data": {
-        "pii_entities": [
+        "entities": [
           {
             "text": "John Doe",
             "type": "Person",
@@ -197,6 +197,369 @@
             "offset": 539,
             "length": "27",
             "score": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "doc4",
+      "data": {
+        "entities": [
+          {
+            "text": "tour guide",
+            "category": "PersonType",
+            "offset": 4,
+            "length": 10,
+            "confidenceScore": 0.45
+          },
+          {
+            "text": "Space Needle",
+            "category": "Location",
+            "offset": 30,
+            "length": 12,
+            "confidenceScore": 0.38
+          },
+          {
+            "text": "trip",
+            "category": "Event",
+            "offset": 54,
+            "length": 4,
+            "confidenceScore": 0.78
+          },
+          {
+            "text": "Seattle",
+            "category": "Location",
+            "subcategory": "GPE",
+            "offset": 62,
+            "length": 7,
+            "confidenceScore": 0.78
+          },
+          {
+            "text": "last week",
+            "category": "DateTime",
+            "subcategory": "DateRange",
+            "offset": 70,
+            "length": 9,
+            "confidenceScore": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "doc5",
+      "data": {
+        "entities": [
+          {
+            "text": "a quarter",
+            "type": "Quantity",
+            "subtype": "Number",
+            "offset": 53,
+            "length": 9,
+            "score": 0.8
+          },
+          {
+            "text": "a billion",
+            "type": "Quantity",
+            "subtype": "Number",
+            "offset": 66,
+            "length": 9,
+            "score": 0.8
+          },
+          {
+            "text": "this year",
+            "type": "DateTime",
+            "subtype": "DateRange",
+            "offset": 105,
+            "length": 9,
+            "score": 0.8
+          },
+          {
+            "text": "president",
+            "type": "PersonType",
+            "subtype": null,
+            "offset": 120,
+            "length": 9,
+            "score": 0.83
+          },
+          {
+            "text": "Microsoft",
+            "type": "Organization",
+            "subtype": null,
+            "offset": 133,
+            "length": 9,
+            "score": 0.73
+          },
+          {
+            "text": "Brad Smith",
+            "type": "Person",
+            "subtype": null,
+            "offset": 152,
+            "length": 10,
+            "score": 0.85
+          },
+          {
+            "text": "learn",
+            "type": "Skill",
+            "subtype": null,
+            "offset": 190,
+            "length": 5,
+            "score": 0.8
+          },
+          {
+            "text": "one",
+            "type": "Quantity",
+            "subtype": "Number",
+            "offset": 252,
+            "length": 3,
+            "score": 0.8
+          },
+          {
+            "text": "digitisation",
+            "type": "Skill",
+            "subtype": null,
+            "offset": 264,
+            "length": 12,
+            "score": 0.8
+          },
+          {
+            "text": "Microsoft",
+            "type": "Organization",
+            "subtype": null,
+            "offset": 302,
+            "length": 9,
+            "score": 0.83
+          },
+          {
+            "text": "recently",
+            "type": "DateTime",
+            "subtype": null,
+            "offset": 312,
+            "length": 8,
+            "score": 0.8
+          },
+          {
+            "text": "plan",
+            "type": "Skill",
+            "subtype": null,
+            "offset": 333,
+            "length": 4,
+            "score": 0.8
+          },
+          {
+            "text": "deliver",
+            "type": "Skill",
+            "subtype": null,
+            "offset": 341,
+            "length": 7,
+            "score": 0.8
+          },
+          {
+            "text": "training",
+            "type": "Skill",
+            "subtype": null,
+            "offset": 360,
+            "length": 8,
+            "score": 0.8
+          },
+          {
+            "text": "25 million",
+            "type": "Quantity",
+            "subtype": "Number",
+            "offset": 372,
+            "length": 10,
+            "score": 0.8
+          },
+          {
+            "text": "this year",
+            "type": "DateTime",
+            "subtype": "DateRange",
+            "offset": 399,
+            "length": 9,
+            "score": 0.8
+          },
+          {
+            "text": "training",
+            "type": "Skill",
+            "subtype": null,
+            "offset": 424,
+            "length": 8,
+            "score": 0.8
+          },
+          {
+            "text": "certifications",
+            "type": "Skill",
+            "subtype": null,
+            "offset": 442,
+            "length": 14,
+            "score": 0.8
+          },
+          {
+            "text": "Microsoft",
+            "type": "Organization",
+            "subtype": null,
+            "offset": 519,
+            "length": 9,
+            "score": 0.6
+          },
+          {
+            "text": "LinkedIn",
+            "type": "Organization",
+            "subtype": null,
+            "offset": 535,
+            "length": 8,
+            "score": 0.49
+          },
+          {
+            "text": "Smith",
+            "type": "Person",
+            "subtype": null,
+            "offset": 557,
+            "length": 5,
+            "score": 0.48
+          },
+          {
+            "text": "digitised",
+            "type": "Skill",
+            "subtype": null,
+            "offset": 741,
+            "length": 9,
+            "score": 0.8
+          },
+          {
+            "text": "developing",
+            "type": "Skill",
+            "subtype": null,
+            "offset": 772,
+            "length": 10,
+            "score": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "doc6",
+      "data": {
+        "entities": [
+          {
+            "name": "LinkedIn",
+            "matches": [
+              {
+                "text": "LinkedIn",
+                "offset": 535,
+                "length": 8,
+                "score": 0.84
+              }
+            ],
+            "language": "en",
+            "id": "LinkedIn",
+            "url": "https://en.wikipedia.org/wiki/LinkedIn",
+            "datasource": "Wikipedia"
+          },
+          {
+            "name": "Brad Smith (American lawyer)",
+            "matches": [
+              {
+                "text": "Brad Smith",
+                "offset": 152,
+                "length": 10,
+                "score": 0.37
+              }
+            ],
+            "language": "en",
+            "id": "Brad Smith (American lawyer)",
+            "url": "https://en.wikipedia.org/wiki/Brad_Smith_(American_lawyer)",
+            "datasource": "Wikipedia"
+          },
+          {
+            "name": "Microsoft",
+            "matches": [
+              {
+                "text": "Microsoft",
+                "offset": 133,
+                "length": 9,
+                "score": 0.39
+              },
+              {
+                "text": "Microsoft",
+                "offset": 302,
+                "length": 9,
+                "score": 0.39
+              }
+            ],
+            "language": "en",
+            "id": "Microsoft",
+            "url": "https://en.wikipedia.org/wiki/Microsoft",
+            "datasource": "Wikipedia"
+          },
+          {
+            "name": "Mr Smith (The Sarah Jane Adventures)",
+            "matches": [
+              {
+                "text": "Mr Smith",
+                "offset": 554,
+                "length": 8,
+                "score": 0.16
+              }
+            ],
+            "language": "en",
+            "id": "Mr Smith (The Sarah Jane Adventures)",
+            "url": "https://en.wikipedia.org/wiki/Mr_Smith_(The_Sarah_Jane_Adventures)",
+            "datasource": "Wikipedia"
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "doc7",
+      "data": {
+        "entities": [
+          {
+            "text": "Microsoft",
+            "type": "Organization",
+            "subtype": null,
+            "offset": 133,
+            "length": "9",
+            "score": 0.73
+          },
+          {
+            "text": "Brad Smith",
+            "type": "Person",
+            "subtype": null,
+            "offset": 152,
+            "length": "10",
+            "score": 0.85
+          },
+          {
+            "text": "Microsoft",
+            "type": "Organization",
+            "subtype": null,
+            "offset": 302,
+            "length": "9",
+            "score": 0.83
+          },
+          {
+            "text": "Microsoft",
+            "type": "Organization",
+            "subtype": null,
+            "offset": 519,
+            "length": "9",
+            "score": 0.6
+          },
+          {
+            "text": "LinkedIn",
+            "type": "Organization",
+            "subtype": null,
+            "offset": 535,
+            "length": "8",
+            "score": 0.49
+          },
+          {
+            "text": "Smith",
+            "type": "Person",
+            "subtype": null,
+            "offset": 557,
+            "length": "5",
+            "score": 0.48
           }
         ]
       }

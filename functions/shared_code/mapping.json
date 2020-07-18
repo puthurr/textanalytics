@@ -1,0 +1,18 @@
+{
+    "vertex":[
+        { "id":["text","name"] },
+        { "label":["type","category"] },
+        { "name":["name","text"] },    
+        { "subtype":["subtype"] },
+        { "length":["length"] },
+        { "language":["language"] },
+        { "url":["url"] },
+        { "datasource":["datasource"] }
+    ],
+    "edge": [
+        { "offset":["offset"] },
+        { "score":["score","confidenceScore"] },
+        { "target":["text","name"]},
+        { "targetlabel":["type","category"]}
+    ]
+}

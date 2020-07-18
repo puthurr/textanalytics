@@ -4,7 +4,10 @@ import json
 import os
 from azure.storage.blob import BlobServiceClient
 import uuid
-import hashlib  
+import hashlib
+ 
+from ..shared_code import azure_entities as ae
+
 #
 # Azure Blob Integration
 #
@@ -62,128 +65,24 @@ def transform_value(value):
         return None
 
     if 'data' in value: 
-    # # Validate the inputs
-    # try:         
-    #     assert ('data' in value), "'data' field is required."
-    #     data = value['data']        
-    #     assert ('text1' in data), "'text1' field is required in 'data' object."
-    #     assert ('text2' in data), "'text2' field is required in 'data' object."
-    # except AssertionError  as error:
-    #     return (
-    #         {
-    #         "recordId": recordId,
-    #         "errors": [ { "message": "Error:" + error.args[0] }   ]       
-    #         })
         data = value['data']
 
         vertices = []
 
-        DOCUMENT_LABEL = 'document'
-        DOCUMENT_ENTITY_EDGE_LABEL = 'refersto'
-        DOCUMENT_LINKED_ENTITY_EDGE_LABEL = 'linksto'
-        LINKED_ENTITY_LABEL = 'linked_entity'
-
+        # Root vertex to link all entities to
         vertex = { }
         vertex['id']=recordId
-        vertex['label']=DOCUMENT_LABEL
+        vertex['label']=ae.DOCUMENT_LABEL
+        vertex['type']=ae.DOCUMENT_LABEL
         vertices.append(vertex)
 
         edges = []
 
         try:
-            # Get the document key 
+            (evertices,eedges) = ae.azure_entities_extractor(recordId,ae.DOCUMENT_LABEL,data)
 
-        #   {
-        #     "text": "Contoso Steakhouse",
-        #     "type": "Location",
-        #     "subtype": null,
-        #     "offset": 11,
-        #     "length": 18,
-        #     "score": 0.46
-        #   },
-            # NER
-            if 'entities' in data:
-                # Create a vertex per KP
-                for entity in data['entities']:
-                    vertex = { }
-                    vertex['id']=entity['text']
-                    vertex['label']= entity['type']
-                    vertex['name']=entity['text']
-                    vertices.append(vertex)
-                    for prop in ['subtype','length']:
-                        vertex[prop]=entity[prop]
-                        pass
-                    # 
-                    edge = { }
-                    edge['id']= hashlib.md5((recordId+'_'+entity['text']).encode('utf-8')).hexdigest()
-                    edge['label']= DOCUMENT_ENTITY_EDGE_LABEL
-                    edge['source']= recordId
-                    edge['sourcelabel']= DOCUMENT_LABEL
-                    edge['target']= entity['text']
-                    edge['targetlabel']= entity['type']
-                    edge['offset']=entity['offset']
-                    edge['score']=entity['score']
-                    # TODO - Add last modified time + creation time of the document
-
-                    edges.append(edge)
-                    pass
-                pass
-                
-        #     "name": "Sirloin steak",
-        #     "matches": [
-        #       {
-        #         "text": "Sirloin steak",
-        #         "offset": 346,
-        #         "length": 13,
-        #         "score": 0.69
-        #       }
-        #     ],
-        #     "language": "en",
-        #     "id": "Sirloin steak",
-        #     "url": "https://en.wikipedia.org/wiki/Sirloin_steak",
-        #     "datasource": "Wikipedia"
-
-            # Linked Entities
-            if 'linked_entities' in data:
-                # Create a vertex per KP
-                for entity in data['linked_entities']:
-                    # Vertex
-                    vertex = { }
-                    vertex['label']= LINKED_ENTITY_LABEL
-                    for prop in ['id','name','language','url','datasource']:
-                        vertex[prop]=entity[prop]
-                        pass
-                    vertices.append(vertex)
-                    # Edge
-                    edge = { }
-                    edge['id']= hashlib.md5((recordId+'_'+entity['id']).encode('utf-8')).hexdigest()
-                    edge['label']= DOCUMENT_LINKED_ENTITY_EDGE_LABEL
-                    edge['source']= recordId
-                    edge['sourcelabel']= DOCUMENT_LABEL
-                    edge['target']= entity['id']
-                    edge['targetlabel']= LINKED_ENTITY_LABEL
-                    edge['offset']=entity['matches'][0]['offset']
-                    edge['score']=entity['matches'][0]['score']
-                    for match in entity['matches']:
-                        # Avg the offset and score ? 
-                        # Avg distance between matches - distribution
-                        pass
-                    # TODO - Add last modified time + creation time of the document
-                    edges.append(edge)
-                    pass
-                pass
-                
-            # Relations
-            if 'relations' in data:
-                # Create a vertex per KP
-                for rel in relations:
-                    pass
-                pass
-
-            # PII Entities
-            if 'pii_entities' in data:
-                # Create a vertex per KP and link it to the document
-                pass
+            vertices.extend(evertices)
+            edges.extend(eedges)              
             
             concatenated_string = str.format("Created {0} vertices and {1} edges.",len(vertices),len(edges))
 
